@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Situng KPO</title>
+  <link rel="stylesheet" href="./style.css">
+  <script src="./socket.js"></script>
+  <script src="./index.js"></script>
+</head>
+<body>
+  <header class="wrapper">
+    <h1 class="title">Situng KPO</h1>
+    <h4 class="subtitle">Silahkan vote pemimpin yang anda pilih</h4>
+  </header>
+
+  <div class="wrapper vote">
+    <div class="vote-person">
+      <p class="vote-person-name">
+        Jokawi
+      </p>
+      <p class="vote-person-number" id="jokawi">0</p>
+      <button id="vote" data-vote="jokawi"> Vote </button>
+    </div>
+
+    <div class="vote-person">
+      <p class="vote-person-name">
+        Kobami
+      </p>
+      <p class="vote-person-number" id="kobami">0</p>
+      <button id="vote" data-vote="kobami"> Vote </button>
+    </div>
+  </div>
+
+  <div class="wrapper">
+    <p class="subtitle">ID Pemilih</p>
+    <div id="userid" class="subtitle"></div>
+  </div>
+</body>
+</html>
